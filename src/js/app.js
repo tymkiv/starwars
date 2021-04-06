@@ -1,5 +1,5 @@
 // begin setup
-const speed = 10;
+const speed = 30;
 const number = 1000;
 
 // end setup
@@ -34,7 +34,7 @@ class Star {
   update() {
     this.z = this.z - speed;
 
-    if (this.z < 1) {
+    if (this.z < speed) {
       this.z = width;
       this.x = Math.random() * (width + width) - width;
       this.y = Math.random() * (height + height) - height;
