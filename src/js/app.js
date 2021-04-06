@@ -1,23 +1,10 @@
 // begin setup
 const speed = 10;
 const number = 1000;
-const stars = [];
-
-// const setup = {
-//   speed: 1,
-//   number: 800,
-//   stars: [],
-//   raf: () => {
-//     ctx.clearRect(0, 0, width, height);
-
-//     setup.stars.forEach(star => star.show());
-
-//     // window.requestAnimationFrame(setup.raf);
-//   }
-// }
 
 // end setup
 
+const stars = [];
 
 const root = document.getElementById('root');
 
@@ -68,7 +55,6 @@ class Star {
     const gradient = ctx.createLinearGradient(width/2 - px, height/2 - py, width/2 - sx, height/2 - sy);
 
     gradient.addColorStop(0, '#000');
-    // // gradient.addColorStop(.5, 'cyan');
     gradient.addColorStop(1, '#fff');
 
     // ctx.fillStyle = '#fff';
@@ -77,7 +63,6 @@ class Star {
     ctx.beginPath();
     // ctx.arc(width/2 - sx, height/2 - sy, r, 0, 2 * Math.PI);
     // ctx.fill();
-    
 
     ctx.lineWidth = r;
     ctx.lineCap = 'round';
