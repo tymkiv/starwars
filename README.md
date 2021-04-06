@@ -1,3 +1,4 @@
+https://quizzical-goldstine-6fb570.netlify.app/
 #How to use
 
 Clone this repo and then in command line type:
